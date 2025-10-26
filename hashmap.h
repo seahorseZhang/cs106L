@@ -491,6 +491,14 @@ public:
      */
     M& operator[](const K& key);
 
+    HashMap(const HashMap& map);
+
+    HashMap& operator=(const HashMap& map);
+
+    HashMap(HashMap&& map);
+
+    HashMap& operator=(HashMap&& map);
+
     /* Milestone 4 headers (you need to declare these) */
     // TODO: declare headers for copy constructor/assignment, move constructor/assignment
 
